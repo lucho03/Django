@@ -22,4 +22,4 @@ class Test(TestCase):
     def test_avg_temperature(self, mocked_requests):
         data = json.load(open('./api/temperature.json'))
         mocked_requests.return_value.json = Mock(return_value=data)
-        assert API.get_avg_temperature() == 4
+        assert API.get_avg_temperature() == 5
