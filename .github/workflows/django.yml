@@ -25,6 +25,7 @@ jobs:
         pip install -r requirements.txt
     - name: Start Server
       run: |
+        echo "Proba"
         python3 manage.py runserver
     - name: Run Tests
       run: |
